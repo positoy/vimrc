@@ -52,6 +52,10 @@ Plugin 'taglist.vim'
 let Tlist_Use_Right_Window = 1
 let Tlist_Auto_Open = 1
 nmap <F8> :Tlist<CR>
+nmap <F9> :bn<CR>
+nmap <F10> :bp<CR>
+nmap <F5> :vertical resize -5<CR>
+nmap <F6> :vertical resize +5<CR>
 
 " Theme
 syntax enable
