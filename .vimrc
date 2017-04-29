@@ -14,20 +14,31 @@ Plugin 'VundleVim/Vundle.vim'
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " " Plugin 'L9'
 " " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'git://git.wincent.com/command-t.git'
 " " The sparkup vim script is in a subdirectory of this repo called vim.
 " " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " " Install L9 and avoid a Naming conflict if you've already installed a
 " " different version somewhere else.
 " " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
+" Andy added following plugins
+Plugin 'The-NERD-tree'
+nmap <F7> :NERDTreeToggle<CR>
+Plugin 'taglist.vim'
+let Tlist_Use_Right_Window = 1
+let Tlist_Auto_Open = 1
+nmap <F8> :Tlist<CR>
+nmap <F9> :bn<CR>
+nmap <F10> :bp<CR>
+nmap <F5> :vertical resize -5<CR>
+nmap <F6> :vertical resize +5<CR>
+Plugin 'scrooloose/nerdcommenter'
+
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,17 +56,6 @@ filetype plugin indent on    " required
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 
-" plugins
-Plugin 'The-NERD-tree'
-nmap <F7> :NERDTreeToggle<CR>
-Plugin 'taglist.vim'
-let Tlist_Use_Right_Window = 1
-let Tlist_Auto_Open = 1
-nmap <F8> :Tlist<CR>
-nmap <F9> :bn<CR>
-nmap <F10> :bp<CR>
-nmap <F5> :vertical resize -5<CR>
-nmap <F6> :vertical resize +5<CR>
 
 " Theme
 syntax enable
