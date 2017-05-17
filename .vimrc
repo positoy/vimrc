@@ -1,4 +1,4 @@
-"gto use Vundle
+"to use Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
