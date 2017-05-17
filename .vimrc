@@ -1,4 +1,4 @@
-"to use Vundle
+"gto use Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -14,31 +14,20 @@ Plugin 'VundleVim/Vundle.vim'
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
 " " plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " " Plugin 'L9'
 " " Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
+" " git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
 " " The sparkup vim script is in a subdirectory of this repo called vim.
 " " Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " " Install L9 and avoid a Naming conflict if you've already installed a
 " " different version somewhere else.
 " " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
-" Andy added following plugins
-Plugin 'The-NERD-tree'
-nmap <F7> :NERDTreeToggle<CR>
-Plugin 'taglist.vim'
-let Tlist_Use_Right_Window = 1
-let Tlist_Auto_Open = 1
-nmap <F8> :Tlist<CR>
-nmap <F9> :bn<CR>
-nmap <F10> :bp<CR>
-nmap <F5> :vertical resize -5<CR>
-nmap <F6> :vertical resize +5<CR>
-Plugin 'scrooloose/nerdcommenter'
-
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -56,6 +45,61 @@ filetype plugin indent on    " required
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 
+" plugins
+Plugin 'The-NERD-tree'
+nmap <F7> :NERDTreeToggle<CR>
+Plugin 'taglist.vim'
+let Tlist_Use_Right_Window = 1
+let Tlist_Auto_Open = 0
+let g:Tlist_Exit_OnlyWindow = 1
+nmap <F8> :Tlist<CR>
+nmap <F9> :bp<CR>
+nmap <F10> :bn<CR>
+nmap <F5> :vertical resize -5<CR>
+nmap <F6> :vertical resize +5<CR>
+
+" mouse enable
+"set mouse+=a
+":set mouse-=a
+
+" Ctags
+set tags+=./tags
+
+" Cscope
+set csprg=/usr/bin/cscope
+
+set csto=0 "(숫자 0)
+set cst
+set nocsverb
+
+if filereadable("./cscope.out")
+    cs add cscope.out
+else
+    cs add /usr/src/linux/cscope.out
+endif
+set csverb
+
+" " cscope 의 질의 종류
+" 0 or s  - > Find this C symbol
+" 1 or g  - > Find this definition
+" 2 or d  - > Find functions called by this function
+" 3 or c  - > Find functions calling this function
+" 4 or t  - > Find assignments to
+" 6 or e  - > Find this egrep pattern 
+" 7 or f   - > Find this File
+" 8 or i   - > Find files #including this file
+
+nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Plugin YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
 
 " Theme
 syntax enable
