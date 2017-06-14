@@ -1,6 +1,7 @@
 "to use Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set cursorline
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -22,6 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 " " git repos on your local machine (i.e. when working on your own plugin)
 
+"Plugin 'file:///home/gmarik/path/to/plugin'
 " " The sparkup vim script is in a subdirectory of this repo called vim.
 " " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -112,7 +114,7 @@ if (has("termguicolors"))
 set termguicolors
 endif
 
-colorscheme OceanicNext
+colorscheme jellybeans
 "colorscheme janah
 
 " URL: http://vim.wikia.com/wiki/Example_vimrc
