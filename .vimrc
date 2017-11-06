@@ -89,7 +89,7 @@ nmap <F6> :vertical resize +5<CR>
 set tags+=./tags
 
 " Cscope
-set csprg=/usr/bin/cscope
+set csprg=/usr/local/bin/cscope
 
 set csto=0 "(숫자 0)
 set cst
