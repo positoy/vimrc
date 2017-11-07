@@ -20,5 +20,13 @@ ln -s ~/vimrc/rmcscope.sh /usr/local/bin/rmcscope.sh
 on the vim commandline  
 :VundleInstall  
 
+## display git branch name on terinal prompt
+put following at the end of the .bash_profile  
+parse_git_branch() {  
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'  
+}  
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "  
+
 ### reference
 https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%84%90-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-vim-%EC%84%A4%EC%A0%95-vimrc/  
+
