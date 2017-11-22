@@ -82,7 +82,7 @@ nmap <F5> :vertical resize -5<CR>
 nmap <F6> :vertical resize +5<CR>
 
 " mouse enable
-"set mouse+=a
+set mouse+=a
 ":set mouse-=a
 
 " Ctags
