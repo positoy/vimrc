@@ -1,3 +1,4 @@
+set exrc
 "to use Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -86,7 +87,7 @@ set mouse+=a
 ":set mouse-=a
 
 " Ctags
-set tags+=./tags
+set tags=./tags
 
 " Cscope
 set csprg=/usr/local/bin/cscope
