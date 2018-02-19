@@ -96,6 +96,8 @@ set csto=0 "(숫자 0)
 set cst
 set nocsverb
 
+cs add /home/pi/workspace/linux/cscope.out
+
 if filereadable("./cscope.out")
     cs add cscope.out
 else
