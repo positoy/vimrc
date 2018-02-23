@@ -17,6 +17,7 @@ ln -s ~/vimrc/mkcscope.sh /usr/local/bin/mkcscope.sh
 ln -s ~/vimrc/rmcscope.sh /usr/local/bin/rmcscope.sh  
 
 ## install vim plugins
+git clone git@github.com:VundleVim/Vundle.vim.git
 on the vim commandline  
 :VundleInstall  
 
