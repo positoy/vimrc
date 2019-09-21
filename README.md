@@ -1,5 +1,7 @@
 # HOW TO SETUP VIM
 
+
+
 ## clone vimrc repo and make symbolic link
     cd ~  
     git clone git@github.com:positoy/vimrc  
@@ -46,5 +48,11 @@ find ./ -type f -exec dos2unix {} \;
 ### reference
 https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%84%90-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-vim-%EC%84%A4%EC%A0%95-vimrc/  
 
-### Yes I can
-to JH
+## zsh
+### install zsh
+    sudo apt-get install zsh curl git
+### install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    vim ~/.zshrc
+### install zsh-autosuggenstions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
