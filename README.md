@@ -56,3 +56,6 @@ https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%8
     vim ~/.zshrc
 ### install zsh-autosuggenstions
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+## ssh
+    sudo apt-get install openssh-server
