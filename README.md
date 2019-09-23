@@ -59,3 +59,7 @@ https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%8
 
 ## ssh
     sudo apt-get install openssh-server
+    
+## boot in cli/graphical mode
+    sudo systemctl set-default multi-user.target
+    sudo systemctl set-default graphical.target
