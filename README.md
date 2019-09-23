@@ -51,6 +51,7 @@ https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%8
 ## zsh
 ### install zsh
     sudo apt-get install zsh curl git
+    chsh
 ### install oh-my-zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     vim ~/.zshrc
