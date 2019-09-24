@@ -54,7 +54,13 @@ https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%8
     chsh
 ### install oh-my-zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
     vim ~/.zshrc
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+    POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+    
 ### install zsh-autosuggenstions
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
