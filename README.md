@@ -1,8 +1,6 @@
-# HOW TO SETUP VIM
+# HOW TO SETUP Linux Terminal
 
-
-
-## clone vimrc repo and make symbolic link
+## clone this repo and make symbolic link
     cd ~  
     git clone git@github.com:positoy/vimrc  
     ln -s ~/vimrc/.vim ~/.vim  
@@ -62,7 +60,9 @@ https://ysoh.wordpress.com/2012/04/09/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%8
     POWERLEVEL9K_PROMPT_ON_NEWLINE=true
     
 ### install zsh-autosuggenstions
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes
+# git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins
 
 ## ssh
     sudo apt-get install openssh-server
