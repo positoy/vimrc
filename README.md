@@ -54,7 +54,7 @@ lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(
 lg = !"git lg1
 ```
 
-### display git branch name on bash terminal prompt
+### branch name on bash terminal prompt
 
 ```bash
 vim ~/.bash_profile
@@ -66,7 +66,9 @@ export PS1="\u@\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\]\$ "
 ```
 
 
+
 ## ZSH
+
 ### install zsh
 ```bash
 sudo apt-get install zsh curl git
@@ -117,5 +119,27 @@ sudo apt-get install openssh-server
 
 ```bash
 find ./ -type f -exec dos2unix {} \;
+```
+
+
+
+## MacOS Homebrew
+
+### MySQL
+```bash
+brew install mysql
+mysql_secure_installation
+mysql.server start // start service
+mysql -uroot // or once
+```
+
+### Development
+``` bash
+brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman tmux
+```
+
+### ELSE
+``` bash
+brew cask install iina folx teamviewer
 ```
 
