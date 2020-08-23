@@ -135,7 +135,7 @@ mysql -uroot // or once
 
 ### Development
 ``` bash
-brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman tmux
+brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman tmux sourcetree
 ```
 
 ### ELSE
