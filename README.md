@@ -125,7 +125,13 @@ find ./ -type f -exec dos2unix {} \;
 
 ## MacOS Homebrew
 
+### Development
+``` bash
+brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman tmux sourcetree homebrew/cask-fonts/font-d2coding
+```
+
 ### MySQL
+
 ```bash
 brew install mysql
 mysql_secure_installation
@@ -133,12 +139,32 @@ mysql.server start // start service
 mysql -uroot // or once
 ```
 
-### Development
-``` bash
-brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman tmux sourcetree docker homebrew/cask-fonts/font-d2coding
+### Docker
+
+```bash
+# install
+brew cask install docker
+
+# install image
+docker search nginx
+docker pull nginx:latest
+
+# run background
+docker run -d --name hello-nginx -p 80:8000 nginx:latest
+
+# run foreground
+docker run -a stdin -a stdout -i -t ubuntu /bin/bash
+
+# else
+docker ps
+docker stop nginx
+docker start nginx
+docker rm nginx
+docker rmi
 ```
 
 ### ELSE
+
 ``` bash
 brew cask install iina folx teamviewer
 ```
