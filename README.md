@@ -77,12 +77,12 @@ chsh
 ### install oh-my-zsh
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
 ### install zsh theme
 ```bash
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes
+cd ~/.oh-my-zsh/custom/themes
+git clone https://github.com/bhilburn/powerlevel10k.git
 
 vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -94,8 +94,13 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 ### install zsh plugins
 
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+vim ~/.zshrc
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
 ```
 
 
