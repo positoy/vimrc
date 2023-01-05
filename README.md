@@ -132,6 +132,9 @@ find ./ -type f -exec dos2unix {} \;
 
 ### Development
 ``` bash
+# install docker * k8s
+brew install docker kubectl colima
+# install utils
 brew install tmux tree
 brew cask install visual-studio-code intellij-idea iterm2 mysqlworkbench postman sourcetree homebrew/cask-fonts/font-d2coding
 ```
