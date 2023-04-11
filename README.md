@@ -85,7 +85,7 @@ cd ~/.oh-my-zsh/custom/themes
 git clone https://github.com/romkatv/powerlevel10k.git
 
 vim ~/.zshrc
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
