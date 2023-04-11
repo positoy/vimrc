@@ -82,7 +82,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ### install zsh theme
 ```bash
 cd ~/.oh-my-zsh/custom/themes
-git clone https://github.com/bhilburn/powerlevel10k.git
+git clone https://github.com/romkatv/powerlevel10k.git
 
 vim ~/.zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
