@@ -176,7 +176,7 @@ docker rmi
 ```
 https://github.com/predatorray/kubectl-tmux-exec
 brew install predatorray/brew/kubectl-tmux-exec
-export PATH="/opt/homebrew/Cellar/kubectl-tmux-exec/0.4.0/bin:$PATH"
+kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
 ```
 
 ### ELSE
