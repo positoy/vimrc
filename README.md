@@ -1,5 +1,9 @@
 # development
 - [node.js v16](https://nodejs.org/en/blog/release/v16.20.1)
+```bash
+#yarn
+npm install --global yarn
+```
 
 # mac
 ```bash
