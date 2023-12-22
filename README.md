@@ -8,7 +8,6 @@ npm install --global yarn
 brew tap johanhaleby/kubetail && brew install kubetail
 
 #kubectl-tmux-exec
-https://github.com/predatorray/kubectl-tmux-exec
 brew install predatorray/brew/kubectl-tmux-exec
 kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
 ```
