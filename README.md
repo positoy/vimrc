@@ -3,6 +3,14 @@
 ```bash
 #yarn
 npm install --global yarn
+
+#kubetail
+brew tap johanhaleby/kubetail && brew install kubetail
+
+#kubectl-tmux-exec
+https://github.com/predatorray/kubectl-tmux-exec
+brew install predatorray/brew/kubectl-tmux-exec
+kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
 ```
 
 # mac
@@ -77,12 +85,3 @@ docker start nginx
 docker rm nginx
 docker rmi
 ```
-
-### k8s
-```
-https://github.com/predatorray/kubectl-tmux-exec
-brew install predatorray/brew/kubectl-tmux-exec
-kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
-```
-
-
