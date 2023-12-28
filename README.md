@@ -19,6 +19,9 @@ kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /
 
 # iterm2, alt-tab, stats, monitorcontrol
 brew install --cask iterm2 alt-tab stats monitorcontrol
+
+# mysqlworkbench
+brew install --cask mysqlworkbench
 ```
 
 # zsh
