@@ -24,6 +24,13 @@ brew install --cask iterm2 alt-tab stats monitorcontrol
 brew install --cask mysqlworkbench
 ```
 
+# vscode plugins
+- GitLens
+- Kubernetes
+- Prettier
+- Prettify JSON
+- Transformer
+
 # zsh
 ```bash
 # install oh-my-zsh
