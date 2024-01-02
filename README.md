@@ -27,9 +27,18 @@ brew install --cask mysqlworkbench
 # vscode plugins
 - GitLens
 - Kubernetes
-- Prettier
 - Prettify JSON
 - Transformer
+- Prettier
+  ```json
+  {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  ```
 
 # zsh
 ```bash
