@@ -4,6 +4,9 @@
 #yarn
 npm install --global yarn
 
+#python (3.12 distutils deprecated)
+brew install python@3.11
+
 #kubetail
 brew tap johanhaleby/kubetail && brew install kubetail
 
