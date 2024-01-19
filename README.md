@@ -7,6 +7,18 @@ npm install --global yarn
 #python (3.12 distutils deprecated)
 brew install python@3.11
 
+#docker
+https://minikube.sigs.k8s.io/docs/tutorials/docker_desktop_replacement/
+brew install docker minikube
+minikube start --container-runtime=docker --vm=true
+eval `minikube docker-env`
+
+#k8s
+https://minikube.sigs.k8s.io/docs/start/
+brew install minikube
+minikube start
+alias kubectl="minikube kubectl --"
+
 #kubetail
 brew tap johanhaleby/kubetail && brew install kubetail
 
