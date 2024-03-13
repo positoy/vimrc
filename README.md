@@ -32,6 +32,12 @@ kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /
 # homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# neardrop
+brew install grishka/grishka/neardrop
+
+# rancher desktop (github desktop alternative)
+https://github.com/rancher-sandbox/rancher-desktop
+
 # iterm2, alt-tab, stats, monitorcontrol
 brew install --cask iterm2 alt-tab stats monitorcontrol
 
