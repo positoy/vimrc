@@ -104,6 +104,16 @@ mysql -uroot // or once
 ### Docker
 
 ```bash
+# register docker 3rd party registry
+docker login {reigstry url}
+cat ~/.docker/config.json
+
+# registry k8s 3rd party registry
+kubectl config get-contexts
+kubectl config use-context rancher-desktop
+kubectl create secret generic {3rd-party-registry} --from-file=.dockerconfigjson=/Users/user/.docker/config.json --type=kubernetes.io/dockerconfigjson
+kubectl get secret
+
 # install
 brew cask install docker
 
