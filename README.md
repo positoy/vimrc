@@ -71,7 +71,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 brew install docker kubectl colima
 # install utils
 brew install tmux tree git nvm
-brew --cask install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code intellij-idea iterm2 postman homebrew/cask-fonts/font-d2coding google-chrome
+brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code intellij-idea iterm2 postman homebrew/cask-fonts/font-d2coding google-chrome --cask 
 ```
 
 ### MySQL
