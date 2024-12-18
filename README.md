@@ -27,24 +27,6 @@ brew install predatorray/brew/kubectl-tmux-exec
 kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
 ```
 
-# mac
-```bash
-# homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# neardrop
-brew install grishka/grishka/neardrop
-
-# rancher desktop (github desktop alternative)
-https://github.com/rancher-sandbox/rancher-desktop
-
-# iterm2, alt-tab, stats, monitorcontrol
-brew install --cask iterm2 alt-tab stats monitorcontrol
-
-# mysqlworkbench
-brew install --cask mysqlworkbench
-```
-
 # vscode plugins
 - GitLens
 - Kubernetes
@@ -89,7 +71,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 brew install docker kubectl colima
 # install utils
 brew install tmux tree
-brew cask install stats monitorcontrol visual-studio-code intellij-idea iterm2 mysqlworkbench postman sourcetree homebrew/cask-fonts/font-d2coding
+brew cask install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code intellij-idea iterm2 postman homebrew/cask-fonts/font-d2coding
 ```
 
 ### MySQL
