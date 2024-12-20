@@ -1,48 +1,3 @@
-# development
-- [node.js v16](https://nodejs.org/en/blog/release/v16.20.1)
-```bash
-#yarn
-npm install --global yarn
-
-#python (3.12 distutils deprecated)
-brew install python@3.11
-
-#docker
-https://minikube.sigs.k8s.io/docs/tutorials/docker_desktop_replacement/
-brew install docker minikube
-minikube start --container-runtime=docker --vm=true
-eval `minikube docker-env`
-
-#k8s
-https://minikube.sigs.k8s.io/docs/start/
-brew install minikube
-minikube start
-alias kubectl="minikube kubectl --"
-
-#kubetail
-brew tap johanhaleby/kubetail && brew install kubetail
-
-#kubectl-tmux-exec
-brew install predatorray/brew/kubectl-tmux-exec
-kubectl tmux-exec -l app.kubernetes.io/instance=bizmarketing-center-front-real /bin/bash
-```
-
-# vscode plugins
-- GitLens
-- Kubernetes
-- Prettify JSON
-- Transformer
-- Prettier
-  ```json
-  {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-      }
-    }
-  ```
-
 # zsh
 ```bash
 # install oh-my-zsh
@@ -67,21 +22,11 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ### Development
 ``` bash
-# install docker * k8s
-brew install docker kubectl colima
 # install utils
-brew install tmux tree git nvm
+brew install tmux tree git nvm predatorray/brew/kubectl-tmux-exec johanhaleby/kubetail/kubetail
 brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code intellij-idea iterm2 postman homebrew/cask-fonts/font-d2coding google-chrome --cask 
 ```
 
-### MySQL
-
-```bash
-brew install mysql
-mysql_secure_installation
-mysql.server start // start service
-mysql -uroot // or once
-```
 
 ### Docker
 
