@@ -61,3 +61,8 @@ docker start nginx
 docker rm nginx
 docker rmi
 ```
+
+# k8s
+function kmux() {
+  kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C
+}
