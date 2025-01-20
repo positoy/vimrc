@@ -15,6 +15,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 vim ~/.zshrc
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+# git
+alias gitlog="git log --oneline --format='%h %p %cn %s' --graph --decorate"
+
+# k8s
+alias k=kubectl
+function kmux() { kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C }
 ```
 
 
@@ -61,8 +68,3 @@ docker start nginx
 docker rm nginx
 docker rmi
 ```
-
-# k8s
-function kmux() {
-  kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C
-}
