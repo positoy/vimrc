@@ -31,7 +31,7 @@ function kmux() { kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C }
 ``` bash
 # install utils
 brew install tmux tree git nvm predatorray/brew/kubectl-tmux-exec johanhaleby/kubetail/kubetail
-brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code intellij-idea iterm2 postman homebrew/cask-fonts/font-d2coding maccy google-chrome --cask 
+brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code@insiders intellij-idea iterm2 postman maccy google-chrome --cask 
 ```
 
 
