@@ -29,6 +29,12 @@ function kmux() { kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C }
 
 ### Development
 ``` bash
+# 1. CLI 도구 (Formula)
+brew install fd ripgrep fzf bat eza zoxide btop lazygit git-delta jq trash tldr starship
+
+# 2. GUI 애플리케이션 (Cask)
+brew install --cask raycast stats maccy iina alt-tab
+
 # install utils
 brew install tmux rg tree git nvm predatorray/brew/kubectl-tmux-exec johanhaleby/kubetail/kubetail
 brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code@insiders intellij-idea iterm2 postman maccy google-chrome dbeaver-community --cask 
