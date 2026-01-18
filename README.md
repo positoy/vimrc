@@ -36,7 +36,7 @@ brew install fd ripgrep fzf bat eza zoxide btop lazygit git-delta jq trash tldr 
 brew install --cask raycast stats maccy iina alt-tab
 
 # install utils
-brew install tmux rg tree git nvm predatorray/brew/kubectl-tmux-exec johanhaleby/kubetail/kubetail
+brew install tmux rg tree git nvm predatorray/brew/kubectl-tmux-exec johanhaleby/kubetail/kubetail kubectx
 brew install stats monitorcontrol alt-tab grishka/grishka/neardrop visual-studio-code@insiders intellij-idea wezterm postman maccy google-chrome dbeaver-community --cask 
 ```
 
