@@ -23,7 +23,10 @@ alias gitlog="git log --oneline --format='%h %p %cn %s' --graph --decorate"
 alias k=kubectl
 function kmux() { kubectl-tmux_exec -l app.kubernetes.io/instance=$1 bash -C }
 ```
-
+# tmux
+```
+echo "bind y setw synchronize-panes" > ~/.tmux.conf
+```
 
 ## MacOS Homebrew
 
