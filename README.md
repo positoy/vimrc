@@ -89,12 +89,16 @@ brew install hey
 brew install k9s stern    # 쿠버네티스 tui 기반 조회 도구 & 멀티 pod log 유틸
 brew install bruno
 brew install mycli
+brew install tmux
+
 # ===========================================
 # 7. GUI 앱 (brew install --cask)
 # ===========================================
+brew install --cask zed
 brew install --cask intellij-idea     # IntelliJ IDEA (Java/Kotlin IDE)
 brew install --cask ghostty           # Ghostty (GPU 가속 터미널)
 brew install --cask obsidian          # Obsidian (마크다운 노트)
+brew install --cask typora
 brew install --cask stats             # Stats (메뉴바 시스템 모니터)
 brew install --cask maccy             # Maccy (클립보드 관리자)
 brew install --cask alt-tab           # AltTab (윈도우 스위처)
