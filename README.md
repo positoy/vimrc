@@ -15,8 +15,8 @@ set -e
 
 # Apple Silicon Mac의 경우 brew PATH 등록
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # ===========================================
 # 2. Oh My Zsh 설치 + Powerlevel10k 테마
 # ===========================================
@@ -95,18 +95,10 @@ brew install mycli
 brew install --cask intellij-idea     # IntelliJ IDEA (Java/Kotlin IDE)
 brew install --cask ghostty           # Ghostty (GPU 가속 터미널)
 brew install --cask obsidian          # Obsidian (마크다운 노트)
-brew install --cask beekeeper-studio  # Beekeeper Studio (DB 클라이언트)
 brew install --cask stats             # Stats (메뉴바 시스템 모니터)
 brew install --cask maccy             # Maccy (클립보드 관리자)
 brew install --cask alt-tab           # AltTab (윈도우 스위처)
-brew install --cask cmux              # CMUX (터미널 멀티플렉서)
 brew install --cask monitorcontrol    # MonitorControl (외장 모니터 밝기/볼륨 조절)
-
-# ===========================================
-# 8. AI CLI 도구 (npm install -g)
-# ===========================================
-npm install -g @anthropic-ai/claude-code  # Claude Code (AI 코딩 어시스턴트)
-npm install -g @openai/codex              # Codex (OpenAI 코딩 어시스턴트)
 
 # ===========================================
 # 완료
