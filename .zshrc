@@ -13,3 +13,26 @@ if command -v tmux >/dev/null 2>&1 && [[ -z "$TMUX" ]] && [[ -o interactive ]]; 
   tmux new-session -A -s default
 fi
 
+function fixhosts() {
+    # 사용자님이 만든 커스텀 호스트 파일 경로
+    local CUSTOM_FILE="$HOME/hosts"
+    
+    # 파일이 실제로 있는지 확인
+    if [ ! -f "$CUSTOM_FILE" ]; then
+        echo "❌ $CUSTOM_FILE 파일을 찾을 수 없습니다."
+        return 1
+    fi
+
+    # 중복 추가를 막기 위한 식별자 (마커)
+    local MARKER="# --- MY CUSTOM HOSTS ---"
+    
+    # /etc/hosts에 마커가 없다면(VPN이 초기화했다면) 내용 추가
+    if ! grep -q "$MARKER" /etc/hosts; then
+        echo "" | sudo tee -a /etc/hosts > /dev/null
+        echo "$MARKER" | sudo tee -a /etc/hosts > /dev/null
+        cat "$CUSTOM_FILE" | sudo tee -a /etc/hosts > /dev/null
+        echo "✅ ~/hosts 내용이 /etc/hosts에 성공적으로 복구되었습니다."
+    else
+        echo "ℹ️ 이미 커스텀 설정이 적용되어 있습니다."
+    fi
+}
