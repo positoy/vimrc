@@ -86,7 +86,7 @@ brew install tlrc         # tldr 커맨드 치트시트 (Rust 클라이언트)
 brew install tree         # 디렉토리 트리 출력
 brew install wget
 brew install hey
-brew install k9s stern    # 쿠버네티스 tui 기반 조회 도구 & 멀티 pod log 유틸
+brew install k9s stern    # 쿠버네티스 tui 기반 조회 도구 & 멀티 pod log 유틸 (0.50.16 정상동작확인)
 brew install bruno
 brew install mycli
 brew install tmux
