@@ -90,6 +90,7 @@ brew install k9s stern    # 쿠버네티스 tui 기반 조회 도구 & 멀티 po
 brew install bruno
 brew install mycli
 brew install tmux
+brew install hunk
 
 # ===========================================
 # 7. GUI 앱 (brew install --cask)
