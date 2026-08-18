@@ -104,6 +104,7 @@ brew install --cask stats             # Stats (메뉴바 시스템 모니터)
 brew install --cask maccy             # Maccy (클립보드 관리자)
 brew install --cask alt-tab           # AltTab (윈도우 스위처)
 brew install --cask monitorcontrol    # MonitorControl (외장 모니터 밝기/볼륨 조절)
+brew install --cask font-d2coding-nerd-font
 
 # ===========================================
 # 완료
