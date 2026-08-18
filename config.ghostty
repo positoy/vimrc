@@ -1,5 +1,5 @@
 background-opacity = 0.9
 background-blur-radius = 10
 keybind = global:cmd+grave_accent=toggle_quick_terminal
-font-family = "나눔고딕코딩"
+font-family = "D2KodingLigature Nerd Font Mono"
 adjust-cell-height = 50%
